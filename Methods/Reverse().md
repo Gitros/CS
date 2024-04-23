@@ -2,6 +2,7 @@
 tags:
   - methods
 ---
+
 Using the `Reverse()` method of the `Array` class to reverse the order of items
 
 - Use the `Reverse()` method to flip the order of the elements in the array.

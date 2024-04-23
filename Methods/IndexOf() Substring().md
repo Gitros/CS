@@ -2,6 +2,7 @@
 tags:
   - methods
 ---
+
 - `IndexOf()` gives you the first position of a character or string inside of another string.
 - `IndexOf()` returns `-1` if it can't find a match.
 - `Substring()` returns just the specified portion of a string, using a starting position and optional length.

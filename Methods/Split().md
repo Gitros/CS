@@ -2,6 +2,7 @@
 tags:
   - methods
 ---
+
 `Split()` method is for variables of type `string` to create an array of strings.
 
 - Use methods like `ToCharArray()` and `Split()` to create an array
@@ -15,11 +16,11 @@ foreach (string item in items)
 ```
 
 ```output
-3 
-2 
-1 
-c 
-b 
+3
+2
+1
+c
+b
 a
 ```
 

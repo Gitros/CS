@@ -2,8 +2,10 @@
 tags:
   - methods
 ---
+
 - The `Remove()` method works like the `Substring()` method, except that it deletes the specified characters in the string.
 - The `Replace()` method swaps all instances of a string with a new string.
+
 ### Remove()
 
 You would typically use `Remove()` when there's a standard and consistent position of the characters you want to remove from the string.
@@ -34,4 +36,5 @@ Console.WriteLine(message);
 ```output
 This is example data
 ```
+
 [[Methods]]

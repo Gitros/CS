@@ -2,6 +2,7 @@
 tags:
   - shortcut
 ---
+
 - You can use composite formatting or string interpolation to format strings.
 - With **composite formatting**, you use a string template containing one or more replacement tokens in the form `{0}`. You also supply a list of arguments that are matched with the replacement tokens based on their order. Composite formatting works when using `string.Format()` or `Console.WriteLine()`.
 - With **string interpolation**, you use a string template containing the variable names you want replaced surrounded by curly braces. Use the `$` directive before the string template to indicate you want the string to be interpolated.
@@ -24,14 +25,11 @@ Console.WriteLine(yourDiscount);
 You saved $7.56 off the regular $67.55 price. A discount of 11.19%!
 ```
 
-
 - Methods that add blank spaces for formatting purposes (`PadLeft()`, `PadRight()`)
 - Methods that compare two strings or facilitate comparison (`Trim()`, `TrimStart()`, `TrimEnd()`, `GetHashcode()`, the `Length` property)
 - Methods that help you determine what's inside of a string, or even retrieve just a part of the string (`Contains()`, `StartsWith()`, `EndsWith()`, `Substring()`)
 - Methods that change the content of the string by replacing, inserting, or removing parts (`Replace()`, `Insert()`, `Remove()`)
 - Methods that turn a string into an array of strings or characters (`Split()`, `ToCharArray()`)
-
-
 
 - The `string` data type, literal strings, and variables of type string each implement many helper methods to format, modify, and perform other operations on strings.
 - The `PadLeft()` and `PadRight()` methods add white space (or optionally, another character) to the total length of a string.

@@ -5,9 +5,13 @@ tags:
   - crud
   - web-api
 ---
+
 Sources: https://www.youtube.com/watch?v=AhAxLiGC7Pc&t=8771s
+
 ### DTO for books
+
 This code is for providing information that needs to be provided for CRUD
+
 ```cs
 namespace BookStore.Api.Dtos;
 
@@ -20,13 +24,19 @@ public record class BookDto(
 
     DateOnly ReleaseDate);
 ```
+
 ### Get all books
+
 this code creates a path /books and displaying books that are in books method
+
 ```cs
 app.MapGet("books", () => books);
 ```
+
 ### Get book by id
+
 this code is for finding an id provided by the client, if the id is not existing it returns an error
+
 ```cs
 app.MapGet("books/{id}", (int id) =>
 
@@ -37,8 +47,11 @@ app.MapGet("books/{id}", (int id) =>
 
 .WithName(GetGameEndpointName);
 ```
+
 ### Post Book
+
 this code is used to add a new object "book" to "books" array, without providing the id becouse id depends on the books length
+
 ```cs
 app.MapPost("books", (CreateBookDto newBook) =>
 {
@@ -49,13 +62,16 @@ app.MapPost("books", (CreateBookDto newBook) =>
         newBook.Price,
         newBook.Author,
         newBook.ReleaseDate);
-        
+       
     books.Add(book);
     return Results.CreatedAtRoute(GetGameEndpointName, new { id = book.Id }, book);
 });
 ```
+
 ### Put book
+
 this code is used to update values for an object with id specified by a client.
+
 ```cs
 app.MapPut("books/{id}", (int id, UpdateBookDto updatedBook) =>
 {
@@ -78,7 +94,9 @@ app.MapPut("books/{id}", (int id, UpdateBookDto updatedBook) =>
 ```
 
 ### Delete book
+
 this code is used to delete an object from books specified by a client.
+
 ```cs
 app.MapDelete("books/{id}", (int id) =>
 {
@@ -86,7 +104,9 @@ app.MapDelete("books/{id}", (int id) =>
     return Results.NoContent();
 });
 ```
+
 ### Http code
+
 code for client to send request to the server
 
 ```http

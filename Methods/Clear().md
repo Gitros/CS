@@ -2,10 +2,12 @@
 tags:
   - methods
 ---
+
 The `Array.Clear()` method allows you to remove the contents of specific elements in your array and replace it with the array default value. For example, in a `string` array the element value cleared is replaced with `null`, when you clear a `int` array element the replacement is done with `0` (zero).
 
 - Use the `Clear()` method to empty the values out of elements in the array.
 - New array elements and cleared elements are null, meaning they don't point to a value in memory.
+
 ### Example
 
 ```cs
@@ -19,12 +21,13 @@ foreach (var pallet in pallets)
     Console.WriteLine($"-- {pallet}");
 }
 ```
+
 Here using the `Array.Clear()` method to clear the values stored in the elements of the `pallets` array starting at index `0` and clearing `2` elements.
 
 ```output
 Clearing 2 ... count: 4
--- 
--- 
+--
+--
 -- B12
 -- A13
 ```
@@ -53,6 +56,7 @@ foreach (var pallet in pallets)
 ```
 
 #### Output:
+
 ```output
 Before: B14
 After:

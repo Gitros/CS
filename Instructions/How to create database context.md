@@ -4,23 +4,26 @@ tags:
   - cs
   - cs-instruction
 ---
+
 Sources: https://www.youtube.com/watch?v=AhAxLiGC7Pc&t=8771s
+
 ### First step
 
-To create a database first we need to define the classes for an app 
+To create a database first we need to define the classes for an app
 
 #### Creating entity
 
 This entity defines classes for Book and taking additional data from Genre and Author
+
 ```cs
 namespace BookStore.Api.Entities;
 
 public class Book
 {
     public int Id { get; set; }
-    
+   
     public required string Name { get; set; }
-    
+   
     public int GenreId { get; set; }
 
     public Genre? Genre { get; set; }
@@ -42,7 +45,7 @@ namespace BookStore.Api.Entities;
 public class Genre
 {
     public int Id { get; set; }
-    
+   
     public required string Name { get; set; }
 }
 ```
@@ -53,14 +56,13 @@ namespace BookStore.Api.Entities;
 public class Author
 {
     public int Id { get; set; }
-    
+   
     public required string Name { get; set; }
 }
 ```
 
-Adding proper entity framework support 
+Adding proper entity framework support
 NugetPackage - Microsoft.EntityFrameworkCore.Sqlite (used for this tutorial)
-
 
 Create a new directory for our data related classes
 (dbContext)
@@ -68,6 +70,7 @@ Create a new directory for our data related classes
 This code is creating a data for our database, that can be mapped to our database
 
 Options provide details how to connet to our database
+
 ```cs
 public class BookStoreContext(DbContextOptions<BookStoreContext> options)
     : DbContext(options)
@@ -91,6 +94,7 @@ By doing that every object will be translated into database.
 ### Connect our application to database
 
 this code provides BookStoreContext the connect to the database
+
 ```cs
  var connString = builder.Configuration.GetConnectionString("BookStore");
 
@@ -98,6 +102,7 @@ builder.Services.AddSqlite<BookStoreContext>(connString);
 ```
 
 json connect database
+
 ```json
 {
   "Logging": {
@@ -119,17 +124,21 @@ Dotnet ef is a tool that is used to do all source of entity framework tasks for 
 Microsoft.EntityFrameworkCore.Design is used to generate entity framework migrations.
 
 Example
+
 ```terminal
 dotnet ef migrations add InitialCreate --output-dir Data\Migrations
 ```
 
 execute the migration
+
 ```terminal
 dotnet ef database update
 ```
 
 ### Extension Data
+
 A scope to interact with the database
+
 ```cs
 using Microsoft.EntityFrameworkCore;
 
@@ -150,6 +159,5 @@ public static class DataExtansions
 ```cs
 await app.MigrateDbAsync();
 ```
-
 
 [[Instructions]]

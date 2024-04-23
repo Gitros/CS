@@ -2,6 +2,7 @@
 tags:
   - methods
 ---
+
 Using the `Sort()` method of the `Array` class to sort the items in the array alphanumerically.
 
 - Use the `Sort()` method to manipulate the order based on the given data type of the array.

@@ -4,7 +4,9 @@ tags:
   - database
   - cs-instruction
 ---
+
 Sources: https://www.youtube.com/watch?v=AhAxLiGC7Pc&t=8771s
+
 ### Seeding data
 
 (this example is for very simple operations)

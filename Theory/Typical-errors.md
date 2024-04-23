@@ -3,6 +3,7 @@ tags:
   - error
   - begginer
 ---
+
 Typowe pomyłki początkujących programistów:
 
 - Wprowadzanie małych liter zamiast wielkich liter `C` w `Console`ciągu , lub liter `W` lub `L` w .`WriteLine`
@@ -16,7 +17,7 @@ Edytor kodu wyróżnia błędy przed kompilacją, aby ułatwić identyfikowanie 
 
 - Korzystanie z polecenia `Console.WriteLine("Your message here");`
 - Należy rozpoczynać wyrazy `Console`, `Write` i `Line` wielkimi literami
-- Użyj poprawnej _interpunkcji_ , ponieważ ma specjalną rolę w języku C#
+- Użyj poprawnej *interpunkcji* , ponieważ ma specjalną rolę w języku C#
 - Jeśli popełnisz błąd, wystarczy go wykryć, naprawić i ponownie uruchomi
 
 [[CS]]

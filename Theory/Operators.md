@@ -3,6 +3,7 @@ tags:
   - values
   - begginer
 ---
+
 Podczas pracy z typami danych liczbowych warto określić, czy wartość jest większa lub mniejsza niż inna wartość. Użyj następujących operatorów, aby wykonać te typy porównań:
 
 - Większe niż `>`
@@ -38,7 +39,7 @@ Console.WriteLine("a" != "A");
 
 Console.WriteLine(1 != 2);
 
-  
+
 
 string myValue = "a";
 
@@ -87,7 +88,7 @@ int b = 6;
 
 Console.WriteLine(a != b); // true
 
-  
+
 
 string s1 = "Hello";
 
@@ -107,7 +108,6 @@ Oto główne informacje o ocenianiu wyrażeń logicznych, które przedstawiono d
 - Do oceniania porównań „większe niż”, „mniejsze niż” i podobnych operacji służą operatory porównywania, takie jak `>`, `<`, `>=` i `<=`.
 - Jeśli metoda zwraca wartość logiczną, może być używana jako wyrażenie logiczne.
 - Używaj operatora negacji logicznej `!`, aby oceniać przeciwieństwo danego wyrażenia.
-
 
 [[https://learn.microsoft.com/pl-pl/training/modules/csharp-evaluate-boolean-expressions/2-exercise-boolean-expressions]]
 
